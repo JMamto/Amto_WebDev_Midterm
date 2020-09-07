@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                font-family:'Courier New';    
+            }
+            h1{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .dtls {
+            display: flex;
+            flex-direction: column;
+            }
+
+            input{
+            padding: 5px;
+            margin-bottom: 15px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #eee;
+            color:#eee;
+            }
+
+            .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 25px;
+            background: #080808; 
+            }
+
+            legend, label{
+                color:#eee;
+            }
+            
+            .checkbox{
+                color:white;
+                
+            }
+            .drop{
+                padding: 10px;
+                align-content: center;
+            }
+
+            button, .button{
+                margin: 30px;
+                border: none;
+                color: #eee;
+                background: transparent;
+            }
+
+            .button :hover{
+                color:orangered;
+            }
+            
+          
+          
+/*The following codes is based on the website www.w3schools.com*/
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                top: 150%;
+                left: 50%;
+                margin-left: -60px;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent black transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+            visibility: visible;
+            }
+/*The following codes is based on the website www.w3schools.com*/
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <form action="">
+                
+                <h1>Registration Form </h1>
+                <div class="dtls">
+                    <input type="text" name="name" placeholder="Type your Full Name here...">
+                    <input type="text" name="email" placeholder="Type your Email here...">
+                    <input type="password" name="password" placeholder="Type your password here..."> 
+                </div>
+
+                <div class="radio">
+                    <fieldset>
+                        <legend>Gender</legend>
+                    <input type="radio" name="gender" value="Male"/>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" value="Female"/>
+                    <label for="gender">Female</label>
+                    </fieldset>
+                </div>
+                
+                <div class="drop">
+                    <select>
+                        <option value="" disabled selected>Please select you civil status...</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Devorced">Separated</option>
+                        <option value="Divorsed">Devorced</option>
+                    </select>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox"><span>send me a confirmation via email.</span>
+                </div>
+
+                <div class="button">
+                    <button onClick="window.location.reload();">Reset</button>
+                    <button onClick="">Commit</button>
+                </div>
+               </form>
+
+               <!--Following codes is based on w3schools-->
+               <div class="tooltip">About the Registration Form
+                <span class="tooltiptext">I based my registration form on a biodata and made a short website type registration form on it.</span>
+              </div>
+              <!--Following codes is based on w3schools-->
+        </div>
+    </body>
+</html>
