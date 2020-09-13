@@ -7,49 +7,102 @@
 
     </head>
     <style>
-        .m {
-    padding: 25px;
-    border:none;
-    box-sizing: border-box;
-    height: 100vh;
-}
-        .m-item{
-        font-size: 24px;
-        border-bottom: 2px solid #4e268d;
+
+        .master-item {
+            font-size: 24px;
+            border-bottom: 2px solid aliceblue;
             padding: 15px;
             background: white;
-            color:#4e268d; 
+            color:aliceblue; 
         }
 
-        .cont  {
-    position: relative;
+        .title{
+            font-size: 40px;
+            color:aquamarine;
         }
 
-        .det{
-    padding: 25px;
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 11;
-    color: #4e268d;
-    height: 100vh;
-    background: white
+        .master-item:hover{
+            background: aliceblue;
+            color: white;
+            cursor: pointer
         }
 
-        
+        .master {
+            padding: 25px;
+            border:none;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        .hidden-md {
+            display: inline
+        }
+
+        .hidden-md-down {
+            display:none
+        }
+
+        .details{
+            padding: 25px;
+            box-sizing: border-box;
+            position: absolute;
+            z-index: 11;
+            color: aliceblue;
+            height: 100vh;
+            background: white
+        }
+
+        .md-main  {
+            position: relative;
+        }       
+
+        /* For phones: */
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+        }
+
+        /* For 786 and above: */
+        @media only screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            .hidden-md {
+                display: none;
+            }
+            
+            .details {
+                position: static;
+            }
+    
+            .master{
+                border-right: 3px solid aliceblue;
+            }
+        }
     </style>
     <body>
-        <div class="cont">
-            <div class="c-3 m">
-                <div class="m-item tit"><strong>Activities</strong></div>
-                <div class="m-item"><a href="poem.html" target="iname">Poem</a></div>
-                <div class="m-item"><a href="markup.html" target="iname">Markup</a></div>
-                <div class="m-item"><a href="wishlist.html" target="iname">Wishlist</a></div>
-                <div class="m-item"><a href="calendar.html" target="iname">Calendar</a></div>
-                <div class="m-item"><a href="registration.html" target="iname">Registration</a></div>
-                <div class="m-item"><a href="vmg.html" target="iname">VMG</a></div>
+        <div class="md-main">
+            <div class="col-3 master">
+                <div class="title"><strong>Activities</strong></div>
+                <div class="master-item"><a href="poem.html" target="item">Poem</a></div>
+                <div class="master-item"><a href="markup.html" target="item">Markup</a></div>
+                <div class="master-item"><a href="wishlist.html" target="item">Wishlist</a></div>
+                <div class="master-item"><a href="calendar.html" target="item">Calendar</a></div>
+                <div class="master-item"><a href="registration.html" target="item">Registration</a></div>
+                <div class="master-item"><a href="vmg.html" target="item">VMG</a></div>
             </div>
-            <div class="c-9 det">
-                <iframe src="poem.html" name="iname" frameborder=""height="100%" width="100%"></iframe>
+            <div class="col-9 details">
+                <iframe src="poem.html" name="item" frameborder=""height="100%" width="100%"></iframe>
             </div>
         </div>
         </body>        
