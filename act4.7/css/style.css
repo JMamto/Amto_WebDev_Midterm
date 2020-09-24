@@ -7,13 +7,13 @@
 }
 
 #img2{
-    background: url('C:/Users/John Michael Amto/Pictures/download/blackp.jpg') no-repeat center;
+    background: url('https://jmamto.github.io/Amto_WebDev_Midterm/act4.7/img/blackp.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
 }
 #img1{
-    background: url('C:/Users/John Michael Amto/Pictures/download/king.jpg') no-repeat center;
+    background: url('https://jmamto.github.io/Amto_WebDev_Midterm/act4.7/img/king.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
