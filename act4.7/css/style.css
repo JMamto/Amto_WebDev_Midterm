@@ -1,0 +1,35 @@
+.cont{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #0C0B13;
+    font-size: 24px;
+    padding: 25px;
+}
+
+#img2{
+    background: url('C:/Users/John Michael Amto/Pictures/download/blackp.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+#img1{
+    background: url('C:/Users/John Michael Amto/Pictures/download/king.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+p{
+    color: whitesmoke;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5{
+    text-align: center;
+    color: #664eae;
+    font-family: 'Courier New';
+}
+
+body{
+    background: #0C0B13;
+}
