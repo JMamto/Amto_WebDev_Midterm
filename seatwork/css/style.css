@@ -1,32 +1,36 @@
 *{
-  margin: 0;
-  padding: 0;
-  }
-  .button{
-   width: 50;
-   height: 50;
-   font-size: 25;
-   margin: 2;
-   cursor:pointer;
-   background:red;
-   border:none;
-   color: white;
-   }
-   .textview{
-   width: 217;
-   margin: 5;
-   font-size: 25;
-   padding: 5;
-   border:none;
-   color:red;
-   }
-   .main{
-    position: absolute;
-   top: 50%;
-   left:50%;
-   transform: translateX(-50%)translateY(-50%);
-   }
-   .bg{
-   background: linear-gradient(to right,#e91e63,red);
-   height: 100%
-   }
+                margin: 0;
+                padding: 0;
+            }
+             .button{
+                width: 75;
+                height: 75;
+                font-size: 25;
+                margin: 2;
+                cursor:pointer;
+                background:red;
+                border:none;
+                color: white;
+             }
+             .button:hover{
+                 background-color: #e91e63;
+             }
+              .textview{
+                width: 315;
+                height: 75;
+                margin: 5;
+                font-size: 25;
+                padding: 5;
+                border:none;
+                color:red;
+              }
+              .main{
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translateX(-50%)translateY(-50%);
+              }
+              .bg{
+                background: #ff6961;
+                height: 100%
+             }
