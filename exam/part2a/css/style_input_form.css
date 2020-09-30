@@ -1,0 +1,79 @@
+body {
+  font-family: "Arial";
+}
+
+h1 {
+  color: black;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  font-size: 70px;
+}
+
+.table0{
+  width: 40%;
+  padding: 0px 0px 0px 70px;
+}
+.table0 th{
+  color: slategray;
+  font-size: small;
+}
+
+#date{
+  border: none;
+}
+#text{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 5;
+  width: 110px;
+}
+
+.table1 {
+  width: 100%;
+  padding: 70px 0px 70px 70px;
+}
+
+.table1 th {
+  color:  slategray;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.table2 {
+  color: black;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.table2 th {
+  padding: 15px;
+  font-weight: 500;
+  border-bottom: 4px solid black;
+}
+
+.table2 td {
+  color: black;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.table3 {
+  color: black;
+  text-align: right;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  padding: 0px 92px 0px 0px;
+  width: 30%;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+}
+
